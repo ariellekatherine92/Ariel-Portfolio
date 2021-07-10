@@ -14,6 +14,12 @@
 html {
     font-size: 62.5%;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*End of Reset and Common Styles */
 
 /* Section 1 */
@@ -26,9 +32,7 @@ html {
         ),
         url(images/bg.jpg) center no-repeat;
         background-size: cover;
-        display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
 }
 
@@ -77,4 +81,44 @@ html {
     text-transform: uppercase;
     letter-spacing: .3rem;
 }
+
+/*Navbar*/
+.navbar {
+    width: 100%;
+    height: 4rem;
+    background-color: #e41c6f;
+    box-shadow: .2rem .2rem .5rem #555;
+}
+
+.navbar-link{
+    font-size: 1.7rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0 3rem;
+    letter-spacing:  .3rem;
+    text-transform: uppercase;
+    position: relative;
+    transition: color .2s;
+}
+
+.navbar-link:hover{
+    color: #fff;
+}
+
+.navbar-link::before{
+    content: "";
+    width: 0%;
+    height: .2rem;
+    background-color: #fff;
+    position: absolute;
+    right: -15%;
+    bottom: -.3rem;
+    transition: width .2s;
+}
+
+
+.navbar-link:hover::before{
+    width: 130%;
+}
+/*End of Navbar*/
 /* End of Section 1 */
