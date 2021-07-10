@@ -227,6 +227,16 @@ html {
     flex-direction: column;
     align-items: center;
   }
+
+  .section-3-heading {
+    font-size: 5rem;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    margin-bottom: 15rem;
+    border-bottom: .3rem solid #333;
+    text-shadow: .2rem .2rem .5rem #555;
+  }
   
   .projects-wrapper {
     width: 80%;
